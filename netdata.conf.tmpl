@@ -1,0 +1,9 @@
+[global]
+  # keep defaults
+
+[web]
+  # Bind on all interfaces; use $PORT from Railway
+  bind to = 0.0.0.0:${PORT}
+  default port = ${PORT}
+  # Optional hardening:
+  # web mode = none        ; if you only use Netdata Cloud (no local UI)
